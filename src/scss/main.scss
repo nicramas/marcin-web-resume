@@ -1,0 +1,43 @@
+// @import "./base/reset";
+@import './base/reset';
+@import "grid";
+@import "./components/aboutMe";
+@import "./components/intro";
+@import "./components/nav";
+@import "./components/contact";
+@import "./components/footer";
+@import "./components/projects";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body, html {
+   display: flex;
+   justify-content: center;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   z-index: 0;
+   @media(max-width: 449px){
+      font-size: 10px;
+   }}
+   
+:root {
+   --color-blue: 110, 7, 243;
+   --color-black: 0, 0, 0;
+   --color-grey: 106, 106, 106;
+   --color-green: 91, 233, 185;
+   --color-grey178: 178, 178, 178;
+   --color-grey209: 209, 209, 209;
+   --color-white: 255, 255, 255;
+}
+
+.App{
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}

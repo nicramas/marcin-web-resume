@@ -1,0 +1,88 @@
+.projectImage{
+    height: 15rem;
+    width:100%;
+    border-radius:1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+
+    &:hover{
+        opacity: 0.5;
+    }
+}
+.project-cards{
+    display:flex;
+    padding:1rem;
+    font-size:1.3rem;
+    line-height:1.5rem;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    text-align:center;
+
+}
+
+
+//testowanie nowych okinek
+.projects-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+        padding:1rem;
+    }
+
+.card{
+        position: relative;
+        width: 20rem;
+        height: 24rem;
+        background: rgb(var(--color-grey));
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
+.card-imgBox, .card .card-textBox{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+.card-imgBox{
+        background: rgb(var(--color-green));
+        height: 8rem;
+        z-index: 1;
+        transform-origin: bottom;
+    }
+.projects-container .card:hover .card-imgBox{
+        transform: translateY(-100%) rotateX(90deg);
+    }
+.card-imgBox::before{
+    content: '';
+    position: absolute;
+    bottom: -3.3rem;
+    width: 9rem;
+    height: 4.6rem;
+    background: rgb(var(--color-green));
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    z-index: 1;
+}
+.card-textBox{
+    height: 17.5rem;
+    width: 100%;
+    border-top: 0.5rem solid rgb(var(--color-grey));
+    transform-origin: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+.projects-container .card:hover .card-textBox{
+        transform: translateY(100%) rotateX(90deg);
+    }
