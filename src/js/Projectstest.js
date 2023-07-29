@@ -44,7 +44,8 @@ const Projects = () => {
 ]
 
     return (
-        <section className="projects-container" id="projects">
+        <section className="projects-container" id="projects"
+>
             <h1 
             style={{
                 fontSize:"1.7rem",

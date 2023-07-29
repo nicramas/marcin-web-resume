@@ -20,7 +20,6 @@ const Test = () => {
         img: "red",
         link: 'https://nicramas.github.io/quotes-Generator-v2/',
         text: 'Random quote generator using Javascript and JSON database',
-        opacity: "0.2"
     },
     {
         id: 'CampervanService',
@@ -29,8 +28,7 @@ const Test = () => {
         image: images.camperImage,
         img:"blue",
         link: 'https://nicramas.github.io/MotorhomeService/',
-        text: 'Motorhome service website created using Html and CSS',
-        opacity: "0.2"
+        text: 'Motorhome service website created using HTML and CSS',
     },
     {
         id: 'Random',
@@ -40,18 +38,11 @@ const Test = () => {
         img: "green",
         link: 'https://cssgrid-generator.netlify.app/',
         text: 'Under construction, coming soon',
-        opacity: "0.2"
     },
 ]
 
     return (
-        <section className="projects_container" id="projects"
-        style={{
-            width:"90%",
-            margin:"auto",
-            textAlign:"center",
-            paddingBottom: "8rem"
-        }}>
+        <section className="projects-container" id="projects">
             <h1 
             style={{
                 fontSize:"1.7rem",
@@ -69,9 +60,13 @@ const Test = () => {
                 {
                 projects.map((project) => {
                     return(
-                    <li className="projects-container" key={project.id}>
+                    <li className="card-container" key={project.id}>
                         <div className="card" alt={project.alt} key={project.id}  href={project.link}>
-                                    <div className="card-content"></div>
+                                    <div className="card-content">
+                                        <h2 className="card-topic">Project Info</h2>
+                                        <p className="card-text">{project.text}</p>
+                                        <a className="btn btnMenu" href={project.link}>Visit Website</a>
+                                    </div>
                                     <div className="card-imgBox">
                                         <img className="icon-imgBox" src={circle} alt="circle code logo"/>
                                     </div>

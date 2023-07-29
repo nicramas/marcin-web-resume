@@ -1,3 +1,9 @@
+.projects-container{
+    width:90%;
+    margin:auto;
+    text-align:center;
+    padding-bottom: 8rem;
+}
 .projectImage{
     height: 15rem;
     width:100%;
@@ -20,12 +26,9 @@
     align-items:center;
     flex-wrap: wrap;
     text-align:center;
-
 }
 
-
-//testowanie nowych okinek
-.projects-container{
+.card-container{
         position: relative;
         display: flex;
         justify-content: center;
@@ -103,8 +106,31 @@
     border-bottom-right-radius: 5rem;
 }
 .icon-imgBox{
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 5rem;
-  
+    position: relative;
+    top: 40px;
+    height: 6rem;
+    z-index: 1;
+}
+
+.card-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.card-topic{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    color: rgb(var(--color-blue))
+
+}
+.card-text{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 3rem;
+    color: rgb(var(--color-grey-primary))
 }
