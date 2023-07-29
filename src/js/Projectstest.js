@@ -2,9 +2,8 @@ import React from "react";
 import quoteGenerator from "../img/quoteGenerator.png";
 import camperRepair from "../img/camperRepair.png";
 import comingSoon from "../img/comingSoon.jpg";
-import circle from "../img/code-circle.svg"
 
-const Test = () => {
+const Projects = () => {
     
     const images = {
         quoteImage: `url(${quoteGenerator})`,
@@ -45,13 +44,7 @@ const Test = () => {
 ]
 
     return (
-        <section className="projects_container" id="projects"
-        style={{
-            width:"90%",
-            margin:"auto",
-            textAlign:"center",
-            paddingBottom: "8rem"
-        }}>
+        <section className="projects-container" id="projects">
             <h1 
             style={{
                 fontSize:"1.7rem",
@@ -65,30 +58,34 @@ const Test = () => {
             }}>Here are a few past design projects I'v worked on.
                 <a href="mailto:m.sapierzynski@hotmail.com"> Email me</a>
             </h2>
-             <ul className="project-cards">
-                {
-                projects.map((project) => {
-                    return(
-                    <li className="projects-container" key={project.id}>
-                        <div className="card" alt={project.alt} key={project.id}  href={project.link}>
-                                    <div className="card-content"></div>
-                                    <div className="card-imgBox">
-                                        <img className="icon-imgBox" src={circle} alt="circle code logo"/>
-                                    </div>
-                                    <div className="card-textBox" style={{backgroundImage: project.image}}></div>
-                                
-                        </div>
-                        {/* <div>
+             <ul className="row"
+                style={{
+                    padding:"1rem",
+                    fontSize:"1.3rem",
+                    lineHeight:"1.5rem",
+                    justifyContent:"center",
+                    textAlign:"center"
+                }}>
+                    {
+                        projects.map((project) => {
+                            return(
+                                <li className="col-" key={project.id}>
+                        <figure>
+                                <a className="projectImage" alt={project.alt} key={project.id}  href={project.link}
+                                 style={{backgroundImage: project.image}}>
+                                </a>
+                        </figure>
+                        <div>
                             {project.text} 
-                        </div> */}
+                        </div>
                     </li>
-                    )
-                })
-                }
+                            )
+                        })
+                    }
             </ul>
         </section>
     )
 }
 
-export default Test
+export default Projects
    

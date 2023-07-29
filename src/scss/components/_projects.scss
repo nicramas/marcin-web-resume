@@ -30,16 +30,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 4rem;
+        flex-direction: column;
+        // gap: 4rem;
         flex-wrap: wrap;
         padding:1rem;
+        margin: auto;
+        // width: 90%;
     }
 
 .card{
         position: relative;
         width: 20rem;
         height: 24rem;
-        background: rgb(var(--color-grey));
+        background: rgb(var(--color-green));
         display: flex;
         justify-content:center;
         align-items: center;
@@ -55,7 +58,7 @@
     }
 
 .card-imgBox{
-        background: rgb(var(--color-green));
+        background: rgb(var(--color-grey-primary));
         height: 8rem;
         z-index: 1;
         transform-origin: bottom;
@@ -67,9 +70,11 @@
     content: '';
     position: absolute;
     bottom: -3.3rem;
+    left: 50%;
+    transform: translate(-50%);
     width: 9rem;
     height: 4.6rem;
-    background: rgb(var(--color-green));
+    background: rgb(var(--color-grey-primary));
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
     z-index: 1;
@@ -77,7 +82,7 @@
 .card-textBox{
     height: 17.5rem;
     width: 100%;
-    border-top: 0.5rem solid rgb(var(--color-grey));
+    border-top: 0.5rem solid rgb(var(--color-green));
     transform-origin: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,3 +91,20 @@
 .projects-container .card:hover .card-textBox{
         transform: translateY(100%) rotateX(90deg);
     }
+
+.card-textBox::before{
+    content: '';
+    position: absolute;
+    top: -1.7rem;
+    width: 10rem;
+    height: 5rem;
+    background: rgb(var(--color-green));
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+.icon-imgBox{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5rem;
+  
+}

@@ -5,24 +5,9 @@ const Nav = () => {
 
 // Menu panel
     return (
-        <div className="overlay"
-        style={{
-            width:"100%",
-            padding: "2rem 0",
-            position:"fixed",
-            right:"0",
-            backgroundColor: "rgb(var(--color-white))",
-            zIndex: "1",
-        }}>
+        <div className="overlay">
             <nav>
-                <ul 
-                style={{
-                    display: "flex",
-                    justifyContent: "flex-end",
-                    gap: "1.5rem",
-                    padding: "0 4rem",
-                    
-                }}>
+                <ul className="nav-list">
                     <li className="nav nav_1" id="nav_1">
                         <a className="btn btnMenu0" href="#home">Home</a>
                     </li>
