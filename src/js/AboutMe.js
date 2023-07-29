@@ -4,11 +4,9 @@ import developper from "../img/developper.svg";
 
 const AboutMe = () => {
 
-    const skillsArray = ['HTML', 'CSS', 'JavaScript', 'Sass', 'Git', 'RWD', 'Json', 'Gulp', 'Github']
+    const skillsArray = ['JavaScript ES5/ES6+', 'Firebase', 'React', 'Bootstrap','HTML', 'CSS', 'Sass', 'Git', 'RWD', 'Json', 'Gulp', 'Github', 'English B2', 'Russian B2', 'Polish Native' ]
 
     return (
-
-
     <div className="aboutMe">
         <section className="aboutMe_image">
             <div className="aboutMe_image_img"></div>
@@ -109,7 +107,7 @@ const AboutMe = () => {
                         <h2 className="aboutMe_skillsBox_position"
                         style={{
                             textAlign: "center",
-                            padding:"1rem 2rem 1.5rem 2rem",
+                            padding:"1rem 2rem 3rem 2rem",
                             fontSize:"1.7rem",
                             fontWeight:"500",
                             
@@ -121,7 +119,7 @@ const AboutMe = () => {
                             textAlign: "center",
                             paddingBottom:"2rem",
                             fontSize:"1.3rem",
-                            padding:"0 3rem 2rem 3rem",
+                            padding:"0 3rem 4rem 3rem",
 
                         }}>I like to code things from scratch, 
                             and enjoy bringing ideas to life in the browser.
@@ -138,14 +136,15 @@ const AboutMe = () => {
                                 style={{
                                     color:"rgb(var(--color-green))",
                                     fontWeight:"500",
-                                    fontSize:"1.7rem"
+                                    fontSize:"1.7rem",
+                                    paddingBottom: "2rem"
                                 }}>
                                     Skills
                                 </h3>
                                 <ul className="row"
                                 style={{
                                     justifyContent:"center",
-                                    padding:"1rem",
+                                    padding:"2rem",
                                     fontSize:"1.3rem",
                                     lineHeight:"1.5rem"
                                 }}>
