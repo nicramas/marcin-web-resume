@@ -1,0 +1,36 @@
+.start{
+    width: 100vp;
+    height: 40%;
+    padding-top:10rem;
+    text-align: center;
+    display:flex;
+    &_background{
+        margin: auto;
+    }
+    &_container{
+        padding: 1.2rem;
+        &_text h1{
+            padding: 1.2rem 0;
+            font-size: 2.1rem;
+            font-weight: 500;
+        }
+        &_text h2 {
+            padding-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+        &_foto{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position:center;
+            border-radius:50%;
+            width:1rem;
+            height:1rem;
+            padding: 4rem;
+            margin: auto;
+        }
+        &_buttons{
+            padding:2rem 0 5rem 0;
+        }
+    }
+}
