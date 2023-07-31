@@ -1,4 +1,6 @@
-
+.footer_container{
+    background-color: rgba(var(--color-white));
+}
 .social_icons {
     text-align: center;
     font-size: 1.3rem;
@@ -12,4 +14,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nicramLogo{
+    background-image: url(/img/nicramLogoPrimary.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position:center;
+    width:5rem;
+    height:3rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin: auto;
 }

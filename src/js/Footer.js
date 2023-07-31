@@ -26,10 +26,8 @@ const Footer = () => {
     ];
 
     return (
-        <section className="footer_container"
-        style={{
-            backgroundColor: "rgba(var(--color-white))",            
-        }}>
+        <section className="footer_container">
+            <div className="fLogo"><p className="nicramLogo" alt='logo'></p></div>
             <div className="social_icons"> 
                 <p className="field">
                          {buttons.map((button) => {

@@ -1,12 +1,15 @@
 import React from "react";
+// import nicramLogo from "../img/nicramLogoPrimary.png";
 // import nicramLogoPrimary from "../img/nicramLogoPrimary.png";
 
 const Nav = () => {
 
+// const logo = {backgroundImage: `url(${nicramLogo})`}
+
 // Menu panel
     return (
         <div className="overlay">
-            <nav>
+            <nav className="nav">
                 <ul className="nav-list">
                     <li className="nav nav_1" id="nav_1">
                         <a className="btn btnMenu0" href="#home">Home</a>

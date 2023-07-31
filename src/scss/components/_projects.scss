@@ -34,11 +34,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        // gap: 4rem;
         flex-wrap: wrap;
         padding:1rem;
         margin: auto;
-        // width: 90%;
     }
 
 .card{
@@ -132,5 +130,5 @@
     font-size: 1.2rem;
     font-weight: 500;
     padding-bottom: 3rem;
-    color: rgb(var(--color-grey-primary))
+    color: rgb(var(--color-grey-primary));
 }
