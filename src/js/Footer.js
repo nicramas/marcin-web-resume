@@ -27,7 +27,6 @@ const Footer = () => {
 
     return (
         <section className="footer_container">
-            <div className="fLogo"><p className="nicramLogo" alt='logo'></p></div>
             <div className="social_icons"> 
                 <p className="field">
                          {buttons.map((button) => {
@@ -38,8 +37,8 @@ const Footer = () => {
                     })}
                 </p>
             </div>
+            <div className="fLogo"><p className="nicramLogo" alt='logo'></p></div>
         </section>
-        
     )
 }
 

@@ -70,12 +70,8 @@ const Test = () => {
                                     <div className="card-imgBox">
                                         <img className="icon-imgBox" src={circle} alt="circle code logo"/>
                                     </div>
-                                    <div className="card-textBox" style={{backgroundImage: project.image}}></div>
-                                
+                                    <div className="card-textBox" style={{backgroundImage: project.image}}></div>       
                         </div>
-                        {/* <div>
-                            {project.text} 
-                        </div> */}
                     </li>
                     )
                 })

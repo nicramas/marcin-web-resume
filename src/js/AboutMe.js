@@ -4,7 +4,7 @@ import developper from "../img/developper.svg";
 
 const AboutMe = () => {
 
-    const skillsArray = ['JavaScript ES5/ES6+', 'Firebase', 'React','HTML', 'CSS', 'Sass', 'Git', 'RWD', 'Json', 'Gulp', 'Github', 'English B2', 'Russian B2', 'Polish Native' ]
+    const skillsArray = ['JavaScript ES5/ES6+', 'Firebase','Gatsby','GraphQL', 'React','HTML', 'CSS', 'Sass', 'Git', 'RWD', 'Json', 'Gulp', 'Github', 'English B2', 'Russian B2', 'Polish Native' ]
 
     return (
     <div className="aboutMe">

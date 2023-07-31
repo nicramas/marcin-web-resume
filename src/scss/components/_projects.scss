@@ -105,10 +105,17 @@
 }
 .icon-imgBox{
     position: relative;
-    top: 40px;
+    top: 36px;
     height: 6rem;
     z-index: 1;
-}
+    @media(max-width: 449px){
+        top: 26px;
+        height: 6rem;
+     }
+     @media screen and (min-width: 450px) and (max-width: 520px){
+        top: 32px;
+        height: 6rem;
+     }}
 
 .card-content {
     position: absolute;

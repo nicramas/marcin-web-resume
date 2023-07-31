@@ -1,5 +1,5 @@
 import React from "react";
-import msfoto from "../img/ms.jpg";
+import msfoto from "../img/msFotoBg.png";
 
 const Intro = () => {
 
