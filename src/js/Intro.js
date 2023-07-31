@@ -3,7 +3,6 @@ import msfoto from "../img/msFotoBg.png";
 
 const Intro = () => {
 
-
     return (
         <div className="start" id="home">
             <section className="start_background">
