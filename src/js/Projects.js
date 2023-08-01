@@ -2,14 +2,16 @@ import React from "react";
 import quoteGenerator from "../img/quoteGenerator.png";
 import camperRepair from "../img/camperRepair.png";
 import kanbanBoard from "../img/kanban-board.png";
-import circle from "../img/code-circle.svg"
+import player from "../img/media-player.png";
+import circle from "../img/code-circle.svg";
 
 const Test = () => {
     
     const images = {
         quoteImage: `url(${quoteGenerator})`,
         camperImage: `url(${camperRepair})`,
-        kanbanImage: `url(${kanbanBoard})`
+        kanbanImage: `url(${kanbanBoard})`,
+        playerImage: `url(${player})`,
     }
     const projects = [
     {
@@ -19,16 +21,16 @@ const Test = () => {
         image: images.quoteImage,
         img: "red",
         link: 'https://nicramas.github.io/quotes-Generator-v2/',
-        text: 'Random quote generator using JavaScript and JSON database',
+        text: 'Random quote generator using JavaScript',
     },
     {
-        id: 'CampervanService',
-        name: 'Campervan service',
+        id: 'MediaPlayer',
+        name: 'Music Player',
         alt: "camper and caravan repair",
-        image: images.camperImage,
+        image: images.playerImage,
         img:"blue",
-        link: 'https://nicramas.github.io/MotorhomeService/',
-        text: 'Motorhome service website created using HTML and CSS',
+        link: 'https://nicramas.github.io/web-music-player/',
+        text: 'Music player using JavaScript',
     },
     {
         id: 'KanbanBoard',
