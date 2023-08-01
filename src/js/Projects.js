@@ -19,7 +19,7 @@ const Test = () => {
         image: images.quoteImage,
         img: "red",
         link: 'https://nicramas.github.io/quotes-Generator-v2/',
-        text: 'Random quote generator using Javascript and JSON database',
+        text: 'Random quote generator using JavaScript and JSON database',
     },
     {
         id: 'CampervanService',
@@ -31,13 +31,13 @@ const Test = () => {
         text: 'Motorhome service website created using HTML and CSS',
     },
     {
-        id: 'Random',
-        name: 'in progres',
-        alt: "in progres",
+        id: 'KanbanBoard',
+        name: 'Kanban Board',
+        alt: "drag and drop kanban board",
         image: images.kanbanImage,
         img: "green",
-        link: 'https://cssgrid-generator.netlify.app/',
-        text: 'Under construction, coming soon',
+        link: 'https://nicramas.github.io/drag-drop-list/',
+        text: 'Drag and drop Kanban Board using JavaScript',
     },
 ]
 
