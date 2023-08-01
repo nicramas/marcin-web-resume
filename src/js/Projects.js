@@ -1,7 +1,7 @@
 import React from "react";
 import quoteGenerator from "../img/quoteGenerator.png";
 import camperRepair from "../img/camperRepair.png";
-import comingSoon from "../img/comingSoon.jpg";
+import kanbanBoard from "../img/kanban-board.png";
 import circle from "../img/code-circle.svg"
 
 const Test = () => {
@@ -9,7 +9,7 @@ const Test = () => {
     const images = {
         quoteImage: `url(${quoteGenerator})`,
         camperImage: `url(${camperRepair})`,
-        inProgresImage: `url(${comingSoon})`
+        kanbanImage: `url(${kanbanBoard})`
     }
     const projects = [
     {
@@ -34,7 +34,7 @@ const Test = () => {
         id: 'Random',
         name: 'in progres',
         alt: "in progres",
-        image: images.inProgresImage,
+        image: images.kanbanImage,
         img: "green",
         link: 'https://cssgrid-generator.netlify.app/',
         text: 'Under construction, coming soon',
@@ -62,15 +62,15 @@ const Test = () => {
                     return(
                     <li className="card-container" key={project.id}>
                         <div className="card" alt={project.alt} key={project.id}  href={project.link}>
-                                    <div className="card-content">
-                                        <h2 className="card-topic">Project Info</h2>
-                                        <p className="card-text">{project.text}</p>
-                                        <a className="btn btnMenu" href={project.link}>Visit Website</a>
-                                    </div>
-                                    <div className="card-imgBox">
-                                        <img className="icon-imgBox" src={circle} alt="circle code logo"/>
-                                    </div>
-                                    <div className="card-textBox" style={{backgroundImage: project.image}}></div>       
+                            <div className="card-content">
+                                <h2 className="card-topic">Project Info</h2>
+                                <p className="card-text">{project.text}</p>
+                                <a className="btn btnMenu" href={project.link}>Visit Website</a>
+                            </div>
+                            <div className="card-imgBox">
+                                <img className="icon-imgBox" src={circle} alt="circle code logo"/>
+                            </div>
+                            <div className="card-textBox" style={{backgroundImage: project.image}}></div>       
                         </div>
                     </li>
                     )

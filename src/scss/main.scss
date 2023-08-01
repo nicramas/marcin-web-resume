@@ -19,6 +19,8 @@ body, html {
    margin: 0;
    padding: 0;
    z-index: 0;
+   background-color: rgb(var(--color-white));
+
    @media(max-width: 449px){
       font-size: 10px;
    }
@@ -38,6 +40,13 @@ body, html {
    --color-grey209: 209, 209, 209;
    --color-white: 255, 255, 255;
    --fontColor-primary: 83,91,107;
+   @media(prefers-color-scheme: dark){
+      --color-green: 110, 7, 243;
+      --color-blue: 91, 233, 185;
+      --fontColor-primary: 255, 255, 255;
+      --color-white: 83,91,107;
+      --color-grey-primary: 255, 255, 255;
+   }
 }
 
 .App {
@@ -47,7 +56,6 @@ body, html {
    &_container {
       display: flex;
       width: 100vw;
-      background-color: rgb(var(--color-white));
    }
 }
 
