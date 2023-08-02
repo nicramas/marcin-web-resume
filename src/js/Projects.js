@@ -46,7 +46,8 @@ const Test = () => {
     return (
         <section className="projects-container" id="projects">
             <h1>Projects</h1>
-            <h2>Here are a few past design projects I'v worked on.
+            <h2>
+                Here are a few past design projects I'v worked on.
                 <a href="mailto:m.sapierzynski@hotmail.com"> Email me</a>
             </h2>
              <ul className="project-cards">
