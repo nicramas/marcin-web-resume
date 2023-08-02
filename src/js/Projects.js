@@ -45,17 +45,8 @@ const Test = () => {
 
     return (
         <section className="projects-container" id="projects">
-            <h1 
-            style={{
-                fontSize:"1.7rem",
-                fontWeight:"500",
-                padding:"1rem 3rem 2rem"
-            }}>Projects</h1>
-            <h2
-            style={{
-                fontSize:"1.3rem",
-                padding:"0 3rem 5rem",
-            }}>Here are a few past design projects I'v worked on.
+            <h1>Projects</h1>
+            <h2>Here are a few past design projects I'v worked on.
                 <a href="mailto:m.sapierzynski@hotmail.com"> Email me</a>
             </h2>
              <ul className="project-cards">
